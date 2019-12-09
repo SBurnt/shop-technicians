@@ -38,6 +38,11 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
 /* ----- SLIDER BACKGROUND MAIN START ----- */
 .slider {
   margin: 0;
@@ -81,11 +86,13 @@ button::-moz-focus-inner {
 .slider .slide:nth-child(2) {
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
+  animation-delay: 5s;
   /* background-image: url(../assets/bg-main.png); */
 }
 .slider .slide:nth-child(3) {
   -webkit-animation-delay: 10s;
   -moz-animation-delay: 10s;
+  animation-delay: 10s;
   /* background-image: url(../assets/foto-header.png); */
 }
 @keyframes anim_slides {
@@ -567,7 +574,7 @@ textarea {
   }
 
   .container-cell {
-    width: calc(100% / 2 - 2px);
+    width: calc(100% / 2 - 1px);
   }
 
   .main__catalog.container-cell:nth-child(3) {

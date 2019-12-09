@@ -20,6 +20,7 @@ btnIconMenu.addEventListener('click', () => {
   btnIconMenu.classList.toggle('open');
   document.getElementById('sidebar-right-show').classList.toggle('show-menu');
   document.getElementById('mask-overlay-show').classList.toggle('show-mask');
+  document.querySelector('body').classList.toggle('overflow-hidden');
 });
 
 // ---------- show search ----------
@@ -27,6 +28,7 @@ const btnIconSearch = document.querySelectorAll('.icon-search-show');
 btnIconSearch.forEach(icon => {
   icon.addEventListener('click', () => {
     document.getElementById('search').classList.toggle('show-search');
+    document.querySelector('body').classList.toggle('overflow-hidden');
   });
 });
 
